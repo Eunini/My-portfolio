@@ -40,7 +40,7 @@ html {
     padding-left: 30px;
     left: -100%;
     top: 0px;
-    transition: 4s;
+    transition: 2s;
     color: white;
   }
   #navbar.active {
@@ -233,7 +233,7 @@ section #card1,#card2,#card3{
  border-radius: 10px;
  margin-top: 40px;
  margin-bottom: 10px;
- margin-left: 30px;
+ margin-left: 20px;
  box-sizing: border-box;
  background-color: #ffd7ef;
  box-shadow: 14px 14px 20px #cbced1,inset -6px 6px 6px #cdced1, inset -8px -8px -8px #cbced1;
