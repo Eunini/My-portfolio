@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>my portfolio</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="home">
+      <p class="title"><a href="#">port<span>folio</span></a></p>
+      <div class="toggle" onclick="toggleMe()">
+<i class="fa fa-bars" id="bars"></i>
+<i class="fa fa-times" id="times"></i>
+      </div>
+      <div id="navbar">
+   <nav>
+     <ul>
+       <li><a href="#home"> Home</a> </li>
+       <li><a href="#about"> About</a></li>
+       <li><a href="#skills"> Skills</a></li>
+       <li><a href="#contact"> Contact</a></li>
+     </ul>
+   </nav>  
+    </div>
+    <div class="home" id="home">
+    <p class="intro"> Hello, my name is <span> EUNICE.</span> I am a web developer.</p>
+    <button id="about"><a href="#about"> About me</a></button>
+    </div>
+    </div>
+    <div class="about">
+      <div class="about-content">
+        <section>
+        <p class="me"> About Me</p>
+        <img src="./images/eunice2.jpg"  alt="">
+        <div class="myself-wrapper">
+        <p class="myself"> My name is Atanda Inioluwa Eunice. I am a computer science fresher in the university of Ibadan. I am a web developer and web designer. I am 18 years old and I love coding.</p>
+        <button id="skill"><a href="#skills"> My Skills </a></button>
+        </section>
+      </div>
+    </div>
+      <p id="skills-topic"> Skills</p>
+ <div class="skill-content">
+      <section>
+      <div id="card1">
+<i class="fa fa-code" aria-hidden="true" id="code"></i><p class="code"> I am a web developer </p></div>
+<div id="card2">
+<i class="fa fa-paint-brush" aria-hidden="true" id="brush"></i><p class="brush"> I am a web designer</p>
+</div>
+<div id="card3">
+<i class="fa-solid fa-palette" id="palette"></i>
+<p class="designer"> I am a graphics designer</p>
+</div>
+<i class="fa fa-chevron-circle-left" aria-hidden="true" id="left-arrow" onclick="leftarrow()"></i>
+<i class="fa fa-chevron-circle-right" aria-hidden="true" id="right-arrow" onclick="rightarrow()"></i>
+</section>
+</div>
+</div>
+<div class="skill-set-wrapper">
+<h2> Skills set</h2>
+<p class="my-content"> what I know </p>
+<div class="skill-set">
+<label for="title">HTML</label>
+<progress max="100" value="90"class="p-1">90%</progress>
+<label for="" >CSS</label>
+<progress max="100" value="80"class="p-1">80%</progress>
+<label for="title" >JavaScript</label>
+<progress max="100" value="50"class="p-1">50%</progress>
+<label for="title">Python</label>
+<progress max="100" value="40"class="p-1"> 40% </progress>
+<label for="title"> Wordpress</label>
+<progress max="100"value="45" class="p-1"> 60%</progress>
+<label for="title">Graphics Design</label>
+<progress max="100" value="60"class="p-1"> 70% </progress>
+</div>
+</div>
+<div class="contact-me-content">
+  <h2 class="cm"> Contact Me </h2>
+  <div class="social-links">
+<i class="fa-brands fa-twitter"></i><a href="https://twitter.com/atanda_inioluwa"> Twitter</a>
+<i class="fa-brands fa-instagram"></i><a href=" https://instagram.com/atandainioluwa?igshid=YmMyMTA2M2Y="> Instagram</a>
+<i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/profile.php?id=100052170881645"> Facebook</a>
+<i class="fa-brands fa-github"></i><a href="https://github.com/Eunini"> Github</a>
+</div>
+<div class="location">
+  <div class="name"><i class="fa fa-user" aria-hidden="true" id="person"></i><p>Name : Eunice </p></div>
+  <div class="address"><i class="fa fa-map-marker" aria-hidden="true" id="map"></i><p id="add">Address : University of Ibadan,Ibadan</p></div>
+  <div class="phone-number"> <i class="fa fa-phone" aria-hidden="true" id="pn"></i><p class="pn">Phone number :+2349161704517</p></div>
+  <div class="gmail"><i class="fa fa-envelope" aria-hidden="true" id="mail"></i><p>gmail: atandainioluwa371@gmail
+  com</p></div>
+  </div>
+</div>
+<footer>
+<span>Created By <a href="#Home">EUNICE</a> | <span class="fa fa-copyright"></span> All rights reserved.</span>
+</footer>
+  </body>
+<script>
+  function toggleMe() {
+    document.getElementById('navbar').classList.toggle('active');
+  
+    document.getElementById('bars').classList.toggle('active');
+    
+    document.getElementById('times').classList.toggle('active');
+  }
+</script> 
+</html>
+    
